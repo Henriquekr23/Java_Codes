@@ -1,0 +1,16 @@
+package pacaje;
+
+import javax.swing.*;
+
+public class media {
+    public static void main(String[] args) {
+        String nome = JOptionPane.showInputDialog("Digite seu nome:");
+        String media = JOptionPane.showInputDialog("Digite a nota:");
+
+        double mediaParse = Double.parseDouble(media);
+                            //Operador Ternário
+        String resultado = mediaParse >= 7 ? "Aprovado":"Reprovado";
+
+        System.out.printf("%s, sua situação: %s", nome, resultado);
+    }
+}
