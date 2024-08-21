@@ -11,5 +11,6 @@ public class media {
         String s2 = input.nextLine();
 
         System.out.println(s1.equals(s2));
+                                //comparação entre dois objetos
     }
 }
