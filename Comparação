@@ -1,0 +1,15 @@
+
+import java.util.Scanner;
+
+public class media {
+    public static void main(String[] args) {
+        //comparando duas strings
+        Scanner input = new Scanner(System.in);
+
+        String s1 = "1";
+        System.out.println("Digite um numero:");
+        String s2 = input.nextLine();
+
+        System.out.println(s1.equals(s2));
+    }
+}
