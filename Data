@@ -1,0 +1,64 @@
+package pacagem;
+
+public class Data {
+    int dia;
+    int mes;
+    int ano;
+}
+
+
+package pacagem;
+
+import javax.swing.*;
+
+public class main {
+    public static void main(String[] args) {
+        Data data = new Data();
+        data.dia = Integer.parseInt(JOptionPane.showInputDialog("Qual o dia do seu nascimento?"));
+        data.mes = Integer.parseInt(JOptionPane.showInputDialog("Em que mês?"));
+        data.ano = Integer.parseInt(JOptionPane.showInputDialog("E qual o ano?"));
+        
+        String mesNome;
+        switch (data.mes){
+            case 1:
+                mesNome = "Janeiro";
+                break;
+            case 2:
+                mesNome = "Fevereiro";
+                break;
+            case 3:
+                mesNome = "Março";
+                break;
+            case 4:
+                mesNome = "Abril";
+                break;
+            case 5:
+                mesNome = "Maio";
+                break;
+            case 6:
+                mesNome = "Junho";
+                break;
+            case 7:
+                mesNome = "Julho";
+                break;
+            case 8:
+                mesNome = "Agosto";
+                break;
+            case 9:
+                mesNome = "Setembro";
+                break;
+            case 10:
+                mesNome = "Outubro";
+                break;
+            case 11:
+                mesNome = "Novembro";
+                break;
+            case 12:
+                mesNome = "Dezembro";
+                break;
+            default:
+                System.out.printf("Mês invalido");
+        }
+        
+    }
+}
