@@ -1,14 +1,5 @@
 package pacagem;
 
-public class Data {
-    int dia;
-    int mes;
-    int ano;
-}
-
-
-package pacagem;
-
 import javax.swing.*;
 
 public class main {
@@ -17,8 +8,8 @@ public class main {
         data.dia = Integer.parseInt(JOptionPane.showInputDialog("Qual o dia do seu nascimento?"));
         data.mes = Integer.parseInt(JOptionPane.showInputDialog("Em que mês?"));
         data.ano = Integer.parseInt(JOptionPane.showInputDialog("E qual o ano?"));
-        
-        String mesNome;
+
+        String mesNome = null;
         switch (data.mes){
             case 1:
                 mesNome = "Janeiro";
@@ -59,6 +50,7 @@ public class main {
             default:
                 System.out.printf("Mês invalido");
         }
-        
+        JOptionPane.showMessageDialog(null, "Dia: "+data.dia+"\nMês: "+mesNome+"\nAno: "+data.ano);
     }
 }
+
