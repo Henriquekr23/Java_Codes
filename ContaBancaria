@@ -21,3 +21,55 @@ public class Main {
             }
     }
 }
+
+
+
+
+
+package banco;
+
+public class ContaBancaria {
+    private String nome_titular;
+    private int numero_conta;
+    private double saldo_conta = 0;
+
+    public ContaBancaria(int numero_conta) {
+        this.numero_conta = numero_conta;
+    }
+
+    public String getNome_titular() {
+        return nome_titular;
+    }
+
+    public void setNome_titular(String nome_titular) {
+        this.nome_titular = nome_titular;
+    }
+
+    public int getNumero_conta() {
+        return numero_conta;
+    }
+
+    public void setNumero_conta(int numero_conta) {
+        this.numero_conta = numero_conta;
+    }
+
+    public double getSaldo_conta() {
+        return saldo_conta;
+    }
+
+    public void depositar(double valor){
+        if (valor > 0) {
+            this.saldo_conta += valor;
+        } else {
+            System.out.println("Valor inválido");
+        }
+    }
+
+    public void sacar(double valor){
+        if (saldo_conta > valor) {
+            this.saldo_conta -= valor;
+        } else {
+            System.out.println("Saldo insuficiente");
+        }
+    }
+}
