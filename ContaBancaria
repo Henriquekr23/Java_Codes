@@ -1,0 +1,23 @@
+package banco;
+
+import pessoa.Pessoa;
+
+import javax.swing.*;
+
+public class Main {
+    public static void main(String[] args) {
+        ContaBancaria conta = new ContaBancaria(10021);
+
+        conta.setNome_titular(JOptionPane.showInputDialog("Digite seu nome: "));
+
+            Object[] itens = { "Ver Saldo", "Depositar", "Sacar", "Sair" };
+            Object opcao = JOptionPane.showInputDialog(null,
+                    "Escolha um item", "Opçao",
+                    JOptionPane.INFORMATION_MESSAGE, null, itens, itens [0]);
+
+            if (opcao == "Ver Saldo"){
+                Double.parseDouble();
+                JOptionPane.showMessageDialog(conta.getSaldo_conta());
+            }
+    }
+}
