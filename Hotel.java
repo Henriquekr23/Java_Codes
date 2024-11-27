@@ -67,19 +67,10 @@ class Pessoa{
 
 class Apartamento extends Pessoa{
     private int numeroAp;
-    private String nomeHotel;
 
     public Apartamento(String nomePessoa, int idade, int numeroAp) {
         super(nomePessoa, idade);
         this.numeroAp = numeroAp;
-    }
-
-    public String getNomeHotel() {
-        return nomeHotel;
-    }
-
-    public void setNomeHotel(String nomeHotel) {
-        this.nomeHotel = nomeHotel;
     }
 
     public int getNumeroAp() {
